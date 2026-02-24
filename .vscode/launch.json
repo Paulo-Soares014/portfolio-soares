@@ -1,0 +1,7 @@
+window.addEventListener("load", function() {
+    document.querySelectorAll(".progresso").forEach(barra => {
+        barra.style.width = barra.classList.contains("html") ? "90%" :
+                            barra.classList.contains("css") ? "85%" :
+                            "75%";
+    });
+});
